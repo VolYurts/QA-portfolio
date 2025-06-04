@@ -1,2 +1,3 @@
 # QA-portfolio
-Comprehensive QA portfolio including manual test cases and automated tests with Pytest.
+This is a QA portfolio project containing manual test cases, checklists, and automated tests written in Python using Pytest and Postman collections for API testing.
+
