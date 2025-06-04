@@ -30,7 +30,7 @@ Testing will cover the following modules:
 ## 5. 👤 Roles and Responsibilities
 | Role             | Name               |
 |------------------|--------------------|
-| QA Engineer      | [Your Name]        |
+| QA Engineer      | [Volodymyr]        |
 | Project Manager  | N/A (demo project) |
 
 ## 6. 🗓 Schedule
