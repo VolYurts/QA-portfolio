@@ -6,7 +6,7 @@ This project showcases my journey and skills in Quality Assurance, featuring **m
 
 ## About Me 👋
 
-Hi, I’m Volodymyr. I transitioned from a career in psychology to QA in early 2025. My background helped me develop strong analytical thinking, attention to detail, and an understanding of user behavior — all essential for quality assurance.
+Hi, I’m Volodymyr. I transitioned from a career in psychology to self-study quality assurance in early 2025. My background helped me develop strong analytical thinking, attention to detail, and an understanding of user behavior — all essential for quality assurance.
 
 I’m passionate about thorough manual testing and eager to grow my automation skills using Python.
 
