@@ -47,7 +47,7 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 
 ## Contact 📫
 
-Feel free to reach out via [LinkedIn](your-linkedin-url) or email at your.email@example.com
+Feel free to reach out via [LinkedIn]()
 
 ---
 
