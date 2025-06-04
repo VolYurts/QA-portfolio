@@ -17,14 +17,16 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 - Manual testing: Test planning, test case design, bug reporting  
 - Test automation: Python, Pytest, Selenium  
 - API testing: Postman, automated API tests  
-- SQL: Basic querying and database validation  
+- SQL: Basic querying 
 - Familiarity with Agile methodologies
 
 ---
 
 ## Tools 🔧
 
-- Python, Selenium, Pytest  
+- Python, Selenium, Pytest
+- Pycharm - IDE for Python
+- Chrome Devtools   
 - Postman  
 - Apache JMeter  
 - SQL (MySQL)  
