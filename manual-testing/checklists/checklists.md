@@ -14,37 +14,37 @@
 ---
 
 ## 2. 🔐 Login Functionality Checklist
-- [ ] Login page loads successfully
-- [ ] Valid credentials allow login
-- [ ] Incorrect password shows error
-- [ ] Empty fields block login with validation
-- [ ] User is redirected to dashboard after login
-- [ ] Logout button is visible after login
-- [ ] Logout returns user to guest mode
+- [x] Login page loads successfully
+- [x] Valid credentials allow login
+- [x] Incorrect password shows error
+- [x] Empty fields block login with validation
+- [x] User is redirected to dashboard after login
+- [x] Logout button is visible after login
+- [x] Logout returns user to guest mode
 
 ---
 
 ## 3. 🛒 Shopping Cart Checklist
-- [ ] Items can be added to cart as guest
-- [ ] Quantity can be updated in cart
-- [ ] Items can be removed from cart
-- [ ] Cart content is saved after page refresh
-- [ ] Total price updates correctly
-- [ ] Cart reflects correct product details
+- [x] Items can be added to cart as guest
+- [x] Quantity can be updated in cart
+- [x] Items can be removed from cart
+- [x] Cart content is saved after page refresh
+- [x] Total price updates correctly
+- [x] Cart reflects correct product details
 
 ---
 
 ## 4. 💳 Checkout Process Checklist
-- [ ] Registered user can complete checkout
-- [ ] All shipping and payment fields are visible
-- [ ] Error appears if shipping info is missing
-- [ ] Confirmation message is shown after order
-- [ ] Order appears in order history
+- [x] Registered user can complete checkout
+- [x] All shipping and payment fields are visible
+- [x] Error appears if shipping info is missing
+- [x] Confirmation message is shown after order
+- [x] Order appears in order history
 
 ---
 
 ## 5. 🔍 Product Search & Filters Checklist
-- [ ] Search bar is visible and functional
-- [ ] Products appear when searching by name
-- [ ] No results message is shown for wrong input
-- [ ] Search results match the keyword
+- [x] Search bar is visible and functional
+- [x] Products appear when searching by name
+- [x] No results message is shown for wrong input
+- [x] Search results match the keyword
