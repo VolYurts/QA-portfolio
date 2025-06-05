@@ -1,4 +1,4 @@
-# Bug Report 1
+# Bug Report №1
 
 ## Title:
 Registration form allows existing email without proper message handling
@@ -53,7 +53,7 @@ Medium
 
 
 
-# Bug Report 2
+# Bug Report №2
 
 **Title:**  
 Unable to login with valid credentials – valid user receives error message
@@ -103,7 +103,7 @@ User cannot log in despite providing correct credentials. This blocks access and
 
 
 
-# Bug Report 3
+# Bug Report №3
 
 **Title:**  
 Incorrect password returns confusing message – no clear "Invalid password" prompt
@@ -156,7 +156,7 @@ The error message is too generic or misleading for wrong credentials. It may sug
 
 
 
-# Bug Report 4
+# Bug Report №4
 
 **Title:**  
 Registered user cannot proceed to checkout – login fails during authenticated session
