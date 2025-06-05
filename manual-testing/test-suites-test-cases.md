@@ -3,8 +3,8 @@
 ---
 
 ## 1. User Registration
-**Tests included:**
 **Name tests:** TS01 – Register with valid user data
+**Tests included:**
 TS02 – Register with invalid email
 TS03 – Register with existing email
 
