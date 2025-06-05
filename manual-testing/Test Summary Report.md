@@ -19,7 +19,7 @@ Volodymyr
 ### 1. 👤 User Registration
 | Test Case ID | Title                                | Status   | Comments                                                                                     |
 |--------------|--------------------------------------|----------|----------------------------------------------------------------------------------------------|
-| TS01         | Register with valid user data        | ❌ Failed | Confusing success message; no clear next steps (e.g., no login or reset password links).     |
+| TS01         | Register with valid user data        | ❌ Failed | This message may confuse a new user, as it lacks clear options (e.g., link to login or reset password).     |
 | TS02         | Register with invalid email          | ✅ Passed | Proper validation message displayed.                                                         |
 | TS03         | Register with existing email         | ✅ Passed | Duplicate email prevented correctly.                                                         |
 
@@ -28,8 +28,8 @@ Volodymyr
 ### 2. 🔐 Login Functionality
 | Test Case ID | Title                                | Status   | Comments                                                                                     |
 |--------------|--------------------------------------|----------|----------------------------------------------------------------------------------------------|
-| TS04         | Successful login with valid credential | ❌ Failed | User cannot log in even with correct credentials — possible authentication or user status issue. |
-| TS05         | Login with incorrect password        | ❌ Failed | Incorrect password message too generic or not shown; validation unclear.                     |
+| TS04         | Successful login with valid credential | ❌ Failed | User cannot log in despite providing correct credentials. This blocks access and indicates a possible bug in authentication or user status. |
+| TS05         | Login with incorrect password        | ❌ Failed | The error message is too generic or misleading for wrong credentials. It may suggest account lockout, confusing users.                     |
 | TS06         | Login with empty fields              | ✅ Passed | Validation works correctly; user prevented from submitting empty form.                       |
 
 ---
@@ -46,7 +46,7 @@ Volodymyr
 ### 4. 💳 Checkout Process
 | Test Case ID | Title                                | Status   | Comments                                                                                     |
 |--------------|--------------------------------------|----------|----------------------------------------------------------------------------------------------|
-| TS10         | Complete checkout                    | ❌ Failed | User unexpectedly logged out or rejected during checkout despite valid session.              |
+| TS10         | Complete checkout                    | ❌ Failed | The user is unexpectedly logged out or rejected during checkout, making it impossible to place the order despite a valid login session. This blocks the core functionality of the platform for registered users.              |
 | TS11         | Missing shipping info                | ✅ Passed | Proper warning message displayed when shipping info is missing.                              |
 
 ---
