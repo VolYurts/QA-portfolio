@@ -40,10 +40,10 @@ Applied the following test design techniques:
 
 | Bug ID  | Title                                      | Severity | Status   |
 |--------|--------------------------------------------|----------|----------|
-| BUG-001 | Registering with valid email shows error  | Major    | Open     |
-| BUG-002 | Valid login fails with account error      | Critical | Open     |
-| BUG-003 | Checkout fails due to login error         | Major    | Open     |
-| BUG-004 | Empty login fields show no validation msg | Minor    | Open     |
+| BUG-001 | Registering with valid email shows error  | Low      | Open     |
+| BUG-002 | Valid login fails with account error      | High     | Open     |
+| BUG-003 | Checkout fails due to login error         | Medium   | Open     |
+| BUG-004 | Empty login fields show no validation msg | High     | Open     |
 
 ---
 
