@@ -3,7 +3,6 @@
 ---
 
 ## 1. User Registration
-**Number of Tests:** 3  
 **Tests included:**  
 - Register with valid user data  
 - Register with invalid email  
@@ -11,8 +10,7 @@
 
 ---
 
-## 2. Login Functionality
-**Number of Tests:** 3  
+## 2. Login Functionality  
 **Tests included:**  
 - Successful login with valid credentials  
 - Login with incorrect password  
@@ -29,8 +27,7 @@
 
 ---
 
-## 4. Checkout Process
-**Number of Tests:** 2  
+## 4. Checkout Process 
 **Tests included:**  
 - Complete checkout as registered user  
 - Checkout with missing shipping info  
@@ -38,6 +35,5 @@
 ---
 
 ## 5. Product Search & Filters
-**Number of Tests:** 1  
 **Tests included:**  
 - Search by product name  
