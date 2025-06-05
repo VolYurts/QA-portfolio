@@ -45,7 +45,7 @@ This message may confuse a new user, as it lacks clear options (e.g., link to lo
 
 **Severity:** Low  
 **Priority:** Medium  
-## Attachments:
+**Attachments:**
 ![alt text](image.png)
 
 
