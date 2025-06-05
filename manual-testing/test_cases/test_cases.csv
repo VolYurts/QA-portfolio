@@ -1,0 +1,54 @@
+Test Case ID,Module,Title,Preconditions,Steps,Expected Result,Actual Result,Technique,Priority,Status
+TS01,User Registration,Register with valid user data,User is on the registration page,"1. Enter First Name: John
+2. Enter Last Name: Doe
+3. Enter Email: john.doe@example.com
+4. Enter Password: Password123!
+5. Confirm Password
+6. Click ""Create an Account""","User is registered and redirected to dashboard with message ""Thank you for registering.""","There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.",Equivalence Partitioning,High,Failed
+TS02,User Registration,Register with invalid email,User is on the registration page,"1.Enter First Name: John
+
+2.Enter Last Name: Doe
+
+3.Enter Email: john@com
+
+4. Enter Password: Password123!
+
+5.Click ""Create an Account""","Error message shown: ""Please enter a valid email address.""","Error message shown: ""Please enter a valid email address.""",Equivalence Partitioning,Medium,Pass
+TS03,User Registration,Register with existing email,Email already registered,"1. Fill registration form with already used email
+
+2. Submit","Error message: ""There is already an account with this email address.""","Error message: ""There is already an account with this email address.""",Error Guessing,Medium,Pass
+TS04,Login Functionality,"Successful login with valid credential",User already registered,"1. Enter email and correct password
+
+2. Click ""Sign In""",User is logged in and redirected to account page,The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.,Decision Table,High,Pass
+TS05,Login Functionality,"Login with incorrect password",User already registered,"1. Enter valid email
+
+2. Enter wrong password
+
+3. Click login","Error: ""Invalid login or password.""",The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.,Decision Table,High,Failed
+TS06,Login Functionality,"Login with empty fields",User is on the login page,"1. Leave email and password empty
+
+2. Click login",Validation error messages,Validation error messages,Error Guessing,Medium,Failed
+TS07,Shopping Cart,"Add item to cart as guest",The user is on the product detail page,"1. Open product page
+
+2. Click ""Add to Cart""","Item added, cart count updates","Item added, cart count updates",State Transition,High,Pass
+TS08,Shopping Cart,"Update item quantity",The user has at least one product already added to the cart,"1. Go to cart
+
+2. Change quantity and click update",Cart reflects correct totals,Cart reflects correct totals,Cart reflects correct totals,High,Pass
+TS09,Shopping Cart,"Cart persists after page refresh",The item remains in the cart,"1. Add product to cart
+
+2. Refresh page",Cart retains items,Cart retains items,State Transition,Medium,Pass
+TS10,Checkout Process,"Complete checkout as registered user",User logged in,"1. Add product to cart
+
+2. Proceed to checkout
+
+3. Enter shipping & payment details
+
+4. Place order","Order placed, confirmation message",The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.,Equivalence Partitioning,Medium,Failed
+TS11,Checkout Process,"Checkout with missing shipping info",Go to the order page,"1. Leave address empty
+
+2. Try placing order",Error prompts for missing fields,Error prompts for missing fields,"Error Guessing
+
+",High,Pass
+TS12,Product Search & Filters,"Search by product name",The user is on the homepage or any page where the search bar is visible,"1. Enter product name in search bar
+
+2. Press Enter",Relevant products displayed,Relevant products displayed,Equivalence Partitioning,Medium,Pass
