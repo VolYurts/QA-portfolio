@@ -63,20 +63,22 @@ Volodymyr
 
 ---
 
-## 📝 Issues & Recommendations:
-
 ### TS01 – Register with valid data
-- Add clear post-registration instructions or redirect (e.g., "Proceed to Login", "Reset Password").
+- This message may confuse new users, as it lacks clear options such as a link to login or reset password.  
+- Recommend adding clear next steps or redirect to login page.
 
 ### TS04 – Login with valid credentials
-- Review authentication logic; verify account status, session handling, and error logs.
+- User cannot log in despite providing correct credentials, blocking access.  
+- Possible bug in authentication or user status. Recommend investigating backend and user account status.
 
 ### TS05 – Login with incorrect password
-- Improve error messaging. Ensure incorrect password shows clear validation.
+- Error message is too generic or misleading for wrong credentials.  
+- May suggest account lockout and confuse users. Improve error messaging clarity.
 
-### TS10 – Checkout process fails
-- Investigate session expiration or authorization issues causing logout during checkout.
-
+### TS10 – Checkout process failure
+- User is unexpectedly logged out or rejected during checkout despite valid login session.  
+- Blocks core functionality for registered users. Recommend fixing session management and authorization during checkout.
+  
 ---
 
 ## 📋 Checklist Review Summary:
