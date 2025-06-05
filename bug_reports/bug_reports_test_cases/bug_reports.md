@@ -1,4 +1,4 @@
-# Bug Report №1
+# Bug Report 001
 
 ## Title:
 Registration form allows existing email without proper message handling
@@ -41,19 +41,17 @@ Message shown:
 **Problem:**
 This message may confuse a new user, as it lacks clear options (e.g., link to login or reset password).
 
-## Severity:
-Low
+---
 
-## Priority:
-Medium
-
+**Severity:** Low  
+**Priority:** Medium  
 ## Attachments:
 ![alt text](image.png)
 
 
 
 
-# Bug Report №2
+# Bug Report 002
 
 **Title:**  
 Unable to login with valid credentials – valid user receives error message
@@ -103,7 +101,7 @@ User cannot log in despite providing correct credentials. This blocks access and
 
 
 
-# Bug Report №3
+# Bug Report 003
 
 **Title:**  
 Incorrect password returns confusing message – no clear "Invalid password" prompt
@@ -156,7 +154,7 @@ The error message is too generic or misleading for wrong credentials. It may sug
 
 
 
-# Bug Report №4
+# Bug Report 004
 
 **Title:**  
 Registered user cannot proceed to checkout – login fails during authenticated session
