@@ -72,7 +72,7 @@ User `john.doe@example.com` is already registered and confirmed
 ---
 
 **Test Case:**  
-**TS05 – Login with valid credentials**  
+**TS04 – Login with valid credentials**  
 **Test Design Technique:** Decision Table
 
 ---
@@ -122,7 +122,7 @@ User is registered
 ---
 
 **Test Case:**  
-**TS06 – Login with incorrect password**  
+**TS05 – Login with incorrect password**  
 **Test Design Technique:** Decision Table
 
 ---
