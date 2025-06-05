@@ -10,7 +10,7 @@ Manual Functional Testing (Web UI)
 June 5–7, 2025
 
 ## 👨‍💻 Tester:
-[Your Name]
+Volodymyr
 
 ---
 
