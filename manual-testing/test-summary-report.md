@@ -7,7 +7,7 @@ Magento Demo Store QA Testing
 Manual Functional Testing (Web UI)
 
 ## 📅 Test Period:
-June 5–7, 2025
+June 2–6, 2025
 
 ## 👨‍💻 Tester:
 Volodymyr
