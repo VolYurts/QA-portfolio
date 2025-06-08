@@ -40,8 +40,8 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 
 ## Sample Work 🔬
 
-- Manual test plans and test cases (see `/manual_tests/`)  
-- Bug reports with detailed descriptions (`/bug_reports/`)  
+- Manual test plans and test cases (see `/manual-tests/`)  
+- Bug reports with detailed descriptions (`/bug-reports/`)  
 - Automated test scripts (`/automation/`)  
 - API testing collections (`/api_tests/`)  
 
