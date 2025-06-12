@@ -1,4 +1,4 @@
-# JMeter Performance Tests for Magento Demo Store
+# Apache JMeter Performance Tests for Magento Demo Store
 
 This repository contains basic performance tests created with Apache JMeter for the demo Magento store [magento.softwaretestingboard.com](https://magento.softwaretestingboard.com).
 
