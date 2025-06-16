@@ -1,4 +1,3 @@
-from selenium.webdriver.common.by import  By
 from POM.pages.like_a_button import LikeAButton
 
 def test_button2_exist(browser):
