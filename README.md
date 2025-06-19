@@ -48,6 +48,22 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 
 ---
 
+### 🔁 CI/CD with GitHub Actions
+
+This project also includes continuous integration using **GitHub Actions**:
+
+- You can **run UI tests directly** from the GitHub repository using workflows.
+- Supports both automatic runs on `push` and **manual selection** of specific tests (`workflow_dispatch`).
+- Tests are executed in a headless Chrome browser on Ubuntu runners.
+- Example tests:
+  - `test_add_to_cart.py::test_add_cart`
+  - `test_search.py::test_search`
+  - `test_training_page.py::test_training`
+
+> Test results appear in the **Actions** tab. You can optionally integrate **Allure reports** for detailed test history and trends.
+
+---
+
 ## Contact 📫
 
 Feel free to reach out via [LinkedIn]()
