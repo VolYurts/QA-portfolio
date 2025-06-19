@@ -6,5 +6,4 @@ The goal of this project is to:
 - Understand the structure of web pages (DOM)
 - Practice working with forms, buttons, and common UI elements
 
-Open `index.html` in your browser to view the page.
 
