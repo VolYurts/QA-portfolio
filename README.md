@@ -60,8 +60,6 @@ This project also includes continuous integration using **GitHub Actions**:
   - `test_search.py::test_search`
   - `test_training_page.py::test_training`
 
-> Test results appear in the **Actions** tab. You can optionally integrate **Allure reports** for detailed test history and trends.
-
 ---
 
 ## Contact 📫
