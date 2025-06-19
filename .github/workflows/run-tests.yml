@@ -1,41 +1,48 @@
- name: Automated UI tests
+name: Automated tests
 
- on:
+on:
   workflow_dispatch:
     inputs:
       deployment_target:
         description: Choose target
         required: true
-        default:
         type: choice
         options:
           - first_test
           - second_test
           - third_test
 
- jobs:
-   test:
-     runs-on: ubuntu-latest
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-     steps:
-       - name: Checkout repository
-         uses: actions/checkout@v3
-       - name: actions/python@v4
-         with:
-           python-version: "3.13"
-       - name: Install Chrome
-         run: sudo apt-get install google-chrome-stable
-       - name: install dependencies
-         run: pip install -r requirements.txt
-       - name: first_test
-         if: "github.event.inputs.deployment_target == 'first_test'"
-         run: pytest Automation/ui_tests/test_add_to_cart.py::test_add_cart
-       - name: second_test
-         if: "github.event.inputs.deployment_target == 'second_test'"
-         run: pytest Automation/ui_tests/test_search.py::test_search
-       - name: third_test
-         if: "github.event.inputs.deployment_target == 'third_test'"
-         run: pytest Automation/ui_tests/test_training_page.py::test_training
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.13"
+
+      - name: Install Chrome
+        run: sudo apt-get install google-chrome-stable
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run first_test
+        if: ${{ github.event.inputs.deployment_target == 'first_test' }}
+        run: pytest Automation/ui_tests/test_add_to_cart.py::test_add_cart
+
+      - name: Run second_test
+        if: ${{ github.event.inputs.deployment_target == 'second_test' }}
+        run: pytest Automation/ui_tests/test_search.py::test_search
+
+      - name: Run third_test
+        if: ${{ github.event.inputs.deployment_target == 'third_test' }}
+        run: pytest Automation/ui_tests/test_training_page.py::test_training
+
 
 
 
