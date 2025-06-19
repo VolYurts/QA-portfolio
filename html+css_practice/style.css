@@ -1,0 +1,264 @@
+body {
+    margin: 0%;
+    font-family: "Raleway", sans-serif;
+  }
+
+ul {
+    margin: 0%;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: relative;
+    height: calc(100vh - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2023/12/alan-ritchson-as-jack-reacher-holding-dogtags-in-the-poster-for-amazon-s-reacher-season-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(233, 231, 118, 0.85);
+}
+
+.nav {
+    position: absolute;
+    width: calc(100% - 40px);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    line-height: 1,5;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list li {
+    padding: 0 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-list li {
+    padding-right: 0;
+}
+
+.nav-list-link {
+    position: relative;
+    transition: all .25s ease;
+}
+
+.nav-list-link::after {
+    content: "";
+    background: green;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .25s ease;
+}
+
+.nav-list-link:hover {
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.logo-2 {
+    position: absolute;
+    width: 100%;
+    padding: 40 0px;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-22 {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    text-align: right;
+    pointer-events: none;
+}
+
+.nav-list li:last-of-type a {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    background-color: red;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 1s ease;
+}
+
+.heart-icon {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    transform: translateY(5px);
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: blue;
+}
+
+.nav-list li a svg {
+    margin-right: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+}
+
+.header-content-title {
+    font-size: 56px;
+    color: white;
+    line-height: 84px;
+}
+
+.header-content-title-green {
+    color: #17baaa;
+}
+
+.header-content-btn {
+    display: block;
+    background: #17baaa;
+    color: #fff;
+    font-size: .875rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 100%;
+    min-height: 40px;
+    transition: all .25s ease;
+}
+
+.header-content-btn:hover {
+    background-color: #129185;
+}
+
+.header-content-btn::after {
+    content: " →";
+    font-size: 1rem;
+    transition: margin-left 0.25s ease;
+}
+
+.header-content-btn:hover::after {
+    margin-left: 5px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.burger.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 8px;
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 8px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-list li {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+} 
