@@ -65,6 +65,5 @@ pytest
 cd automation/api_tests
 pytest
 
----
 
 
