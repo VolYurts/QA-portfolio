@@ -45,6 +45,17 @@ Each test run installs dependencies, sets up Chrome, and executes UI test cases 
 
 ---
 
+## 🛠️ Tools & Technologies Used
+
+- **Python**
+- **Pytest**
+- **Selenium**
+- **Allure** (local reports)
+- **requests**
+- **GitHub Actions**
+
+---
+
 ## 🧪 How to Run Tests Locally
 
 ### Run UI tests:
@@ -56,13 +67,4 @@ pytest
 
 ---
 
-
-## 🛠️ Tools & Technologies Used
-
-- **Python**
-- **Pytest**
-- **Selenium**
-- **Allure** (local reports)
-- **requests**
-- **GitHub Actions**
 
