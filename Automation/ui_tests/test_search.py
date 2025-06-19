@@ -14,7 +14,7 @@ def test_search(browser):
     search_button.click()
 
     WebDriverWait(browser, 10).until(
-        expected_conditions.presence_of_element_located((By.CSS_SELECTOR, 'a.product-item-link'))
+        expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, 'a.product-item-link'))
     )
 
     product_titles = browser.find_elements(By.CSS_SELECTOR, 'a.product-item-link')
