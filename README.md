@@ -45,7 +45,6 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 - Automated test scripts (`/automation/`)  
 - API testing collections (`/postman_api`)
 - Page Object Model example (`/POM/`)
-- Github Actions (`.github/workflows`)
 
 ---
 
