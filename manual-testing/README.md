@@ -32,6 +32,7 @@ Applied the following test design techniques:
 - **Equivalence Partitioning (EP)**
 - **Boundary Value Analysis (BVA)**
 - **Decision Table Testing**
+- **State Transition Testing**
 - **Error Guessing**
 
 ---
