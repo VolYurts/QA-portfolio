@@ -40,11 +40,11 @@ Other helpful tools learned during self-study
 
 ## Sample Work 🔬
 
-Manual test plans and test cases (see /manual-tests/)
-Bug reports with detailed descriptions (/bug-reports/)
-Automated test scripts (/automation/)
-Automated UI tests with Playwright (/playwright/)
-API testing collections (/postman_api/)
+Manual test plans and test cases (see /manual-tests/);
+Bug reports with detailed descriptions (/bug-reports/);
+Automated test scripts (/automation/);
+Automated UI tests with Playwright (/playwright/);
+API testing collections (/postman_api/);
 Page Object Model example (/POM/)
 
 
