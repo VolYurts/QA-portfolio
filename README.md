@@ -14,37 +14,39 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 
 ## Tech Skills 💻
 
-- Manual testing: Test planning, test case design, bug reporting  
-- Test automation: Python, Pytest, Selenium  
-- API testing: Postman, automated API tests  
-- SQL: Basic querying 
-- Familiarity with Agile methodologies
+Manual testing: Test planning, test case design, bug reporting
+Test automation: Python, Pytest, Selenium, Playwright (basic knowledge)
+API testing: Postman, automated API tests
+SQL: Basic querying
+Familiarity with Agile methodologies
 
 ---
 
 ## Tools 🔧
 
-- Python, Selenium, Pytest
-- Pycharm - IDE for Python
-- Chrome Devtools   
-- Postman  
-- Apache JMeter  
-- SQL (MySQL)  
-- Git & GitHub  
-- VS Code  
-- Google Sheets  
-- Testomat.io
-- Other helpful tools learned during self-study
+Python, Selenium, Playwright (basic), Pytest
+Pycharm - IDE for Python
+Chrome Devtools
+Postman
+Apache JMeter
+SQL (MySQL)
+Git & GitHub
+VS Code
+Google Sheets
+Testomat.io
+Other helpful tools learned during self-study
 
 ---
 
 ## Sample Work 🔬
 
-- Manual test plans and test cases (see `/manual-tests/`)  
-- Bug reports with detailed descriptions (`/bug-reports/`)  
-- Automated test scripts (`/automation/`)  
-- API testing collections (`/postman_api`)
-- Page Object Model example (`/POM/`)
+Manual test plans and test cases (see /manual-tests/)
+Bug reports with detailed descriptions (/bug-reports/)
+Automated test scripts (/automation/)
+Automated UI tests with Playwright (/playwright/)
+API testing collections (/postman_api/)
+Page Object Model example (/POM/)
+
 
 ---
 
