@@ -1,11 +1,11 @@
+from typing import Tuple
+from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.remote.webelement import WebElement
+
+
 class BasePage:
-    url = None
+    def __init__(self, browser: WebDriver) -> None:
+        self.browser: WebDriver = browser
 
-    def __init__(self, page):
-        self.page = page
-
-    def open(self):
-        if self.url:
-            self.page.goto(self.url)
-        else:
-            print('Not possible to open page without url')
+    def find(self, args: Tuple[str, str]) -> WebElement:
+        return self.browser.find_element(*args)
