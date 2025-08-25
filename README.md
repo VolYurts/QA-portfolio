@@ -14,10 +14,10 @@ I’m passionate about thorough manual testing and eager to grow my automation s
 
 ## Tech Skills 💻
 
-Manual testing: Test planning, test case design, bug reporting
-Test automation: Python, Pytest, Selenium, Playwright (basic knowledge)
-API testing: Postman, automated API tests
-SQL: Basic querying
+Manual testing: Test planning, test case design, bug reporting;
+Test automation: Python, Pytest, Selenium, Playwright (basic knowledge);
+API testing: Postman, automated API tests;
+SQL: Basic querying;
 Familiarity with Agile methodologies
 
 ---
