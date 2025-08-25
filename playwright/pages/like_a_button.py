@@ -1,38 +1,27 @@
-from typing import Tuple
-from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.common.by import By
-
-from POM.pages.base_page import BasePage
-
-
-button_selector: Tuple[str, str] = (By.LINK_TEXT, 'Click')
-result_selector: Tuple[str, str] = (By.ID, 'result-text')
+from playwright.sync_api import expect
+from .base_page import BasePage
 
 
 class LikeAButton(BasePage):
-    def __init__(self, browser: WebDriver) -> None:
-        super().__init__(browser)
+    url = 'https://www.qa-practice.com/elements/button/like_a_button'
 
-    def open(self) -> None:
-        self.browser.get('https://www.qa-practice.com/elements/button/like_a_button')
+    def __init__(self, page, button_selector='.a-button', result_selector='#result-text'):
+        super().__init__(page)
+        self.button_selector = button_selector
+        self.result_selector = result_selector
 
-    @property
-    def button(self) -> WebElement:
-        return self.find(button_selector)
+    def _button(self):
+        return self.page.locator(self.button_selector)
 
-    @property
-    def button_is_displayed(self) -> bool:
-        return self.button.is_displayed()
+    def _result(self):
+        return self.page.locator(self.result_selector)
 
-    def button_click(self) -> None:
-        self.button.click()
+    def check_button_visible(self):
+        expect(self._button()).to_be_visible()
 
-    @property
-    def result(self) -> WebElement:
-        return self.find(result_selector)
+    def click_button(self):
+        self._button().click()
 
-    @property
-    def result_text(self) -> str:
-        return self.result.text
+    def check_result_text(self, text):
+        expect(self._result()).to_have_text(text)
 
