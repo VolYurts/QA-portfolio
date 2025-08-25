@@ -1,26 +1,34 @@
-from playwright.sync_api import expect
-from pages.base_page import BasePage
+from typing import Tuple
+from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.common.by import By
+
+from POM.pages.base_page import BasePage
 
 
-class SimplePage(BasePage):
-    url = 'https://www.qa-practice.com/elements/button/simple'
+button_selector: Tuple[str, str] = (By.ID, 'submit-id-submit')
+result_selector: Tuple[str, str] = (By.ID, 'result-text')
 
-    def __init__(self, page, button_selector='#submit-id-submit', result_selector='#result-text'):
-        super().__init__(page)
-        self.button_selector = button_selector
-        self.result_selector = result_selector
 
-    def _button(self):
-        return self.page.locator(self.button_selector)
+class SimpleButtonPage(BasePage):
+    def __init__(self, browser: WebDriver) -> None:
+        super().__init__(browser)
 
-    def _result(self):
-        return self.page.locator(self.result_selector)
+    def open(self) -> None:
+        self.browser.get('https://www.qa-practice.com/elements/button/simple')
 
-    def check_button_exists(self):
-        expect(self._button()).to_be_visible()
+    def button(self) -> WebElement:
+        return self.find(button_selector)
 
-    def click_button(self):
-        self._button().click()
+    def button_is_displayed(self) -> bool:
+        return self.button().is_displayed()
 
-    def check_result_text(self, text):
-        expect(self._result()).to_have_text(text)
+    def click_button(self) -> None:
+        self.button().click()
+
+    def result(self) -> WebElement:
+        return self.find(result_selector)
+
+    @property
+    def result_text(self) -> str:
+        return self.result().text
