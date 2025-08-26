@@ -1,9 +1,12 @@
 from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
 import pytest
+from typing import Generator
 
 
 @pytest.fixture()
-def browser():
-    chrome_browser = webdriver.Chrome()
+def browser() -> Generator[WebDriver, None, None]:
+    chrome_browser: WebDriver = webdriver.Chrome()
     chrome_browser.implicitly_wait(10)
-    return chrome_browser
+    yield chrome_browser
+    chrome_browser.quit()
