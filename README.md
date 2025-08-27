@@ -25,15 +25,15 @@ Familiarity with Agile methodologies
 ## Tools 🔧
 
 Python, Selenium, Playwright (basic), Pytest
-Pycharm - IDE for Python
-Chrome Devtools
-Postman
-Apache JMeter
-SQL (MySQL)
-Git & GitHub
-VS Code
-Google Sheets
-Testomat.io
+Pycharm - IDE for Python;
+Chrome Devtools;
+Postman;
+Apache JMeter;
+SQL (MySQL);
+Git & GitHub;
+VS Code;
+Google Sheets;
+Testomat.io;
 Other helpful tools learned during self-study
 
 ---
