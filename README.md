@@ -72,7 +72,7 @@ Created a simple page layout using HTML and CSS to better understand DOM structu
 
 ## Contact 📫
 
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/volodymyr-yurtsan)
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/volodymyr-yurtsan-341668381/)
 
 ---
 
