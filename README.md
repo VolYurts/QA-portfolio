@@ -1,12 +1,12 @@
 # QA Portfolio
 
-This project showcases my journey and skills in Quality Assurance, featuring manual test cases, checklists, automated tests written in Python using Pytest and Selenium, basic knowledge of Playwright, and API testing via Postman.
+This project showcases my journey and skills in Quality Assurance, featuring manual test cases, checklists and automated tests.
 
 ---
 
 ### 🔁 CI/CD with GitHub Actions
 
-This project also includes continuous integration using **GitHub Actions**:
+This project also includes continuous integration using **GitHub Actions**
 
 ---
 
