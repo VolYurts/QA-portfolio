@@ -40,11 +40,11 @@ Applied the following test design techniques:
 ## 🐞 Bugs Found
 
 | Bug ID  | Title                                      | Severity | Status   |
-|--------|--------------------------------------------|----------|----------|
-| BUG-001 | Registering with valid email shows error  | Low      | Open     |
-| BUG-002 | Valid login fails with account error      | High     | Open     |
-| BUG-003 | Checkout fails due to login error         | Medium   | Open     |
-| BUG-004 | Empty login fields show no validation msg | High     | Open     |
+|--------|--------------------------------------------|----------|-----------|
+| BUG-001 | Registering with valid email shows error  | Minor    | New       |
+| BUG-002 | Valid login fails with account error      | Blocker  | New       |
+| BUG-003 | Checkout fails due to login error         | Critical | New       |
+| BUG-004 | Empty login fields show no validation msg | Blocker  | New       |
 
 ---
 
@@ -63,12 +63,5 @@ Screenshots are stored in `/bug_reports/bug_reports_test_cases`.
 
 ---
 
-## 📄 Author
-
-**Volodymyr**  
-  
-
 
 ---
-
-> _This manual QA portfolio is part of my learning path and showcases real testing practice using a demo e-commerce website._
