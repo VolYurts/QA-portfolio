@@ -1,7 +1,7 @@
 # Bug Report 001
 
-## Title:
-Registration form allows existing email without proper message handling
+**Summary:** 
+The registration form allows an existing email without proper message handling
 
 ## Environment:
 - **Browser:** Chrome 137.0.7151.57  
@@ -26,25 +26,26 @@ User is on the registration page
 3. Enter Email: john.doe@example.com (already registered)  
 4. Enter Password: Password123!  
 5. Confirm Password  
-6. Click "Create an Account"  
+6. Click "Create an Account"
 
-## Expected Result:
-User is informed clearly:  
-"This email is already registered. Please log in or reset your password."
-
-## Actual Result:
+**Actual Result:**
 Message shown:  
 > There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.
+
+**Expected Result:**
+User is informed clearly:  
+"This email is already registered. Please log in or reset your password."
 
 ---
 
 **Problem:**
-This message may confuse a new user, as it lacks clear options (e.g., link to login or reset password).
+This message may confuse a new user, as it lacks clear options (e.g., link to the login or reset password).
 
 ---
 
-**Severity:** Low  
+**Severity:** Minor  
 **Priority:** Medium  
+**Status:** New 
 **Attachments:**
 ![alt text](image.png)
 
@@ -53,8 +54,8 @@ This message may confuse a new user, as it lacks clear options (e.g., link to lo
 
 # Bug Report 002
 
-**Title:**  
-Unable to login with valid credentials – valid user receives error message
+**Summary:**
+Unable to log in with valid credentials – a valid user receives an error message
 
 **Environment:**  
 - **Browser:** Chrome 137.0.7151.57  
@@ -76,25 +77,30 @@ User `john.doe@example.com` is already registered and confirmed
 ---
 
 **Steps to Reproduce:**  
-1. Navigate to login page  
-2. Enter valid email: `john.doe@example.com`  
+1. Navigate to the login page  
+2. Enter a valid email: `john.doe@example.com`  
 3. Enter valid password: `Password123!`  
 4. Click "Sign In"
 
 ---
 
+**Actual Result:**
+Message shown:
+> The account sign-in was incorrect, or your account is disabled temporarily. Please wait and try again later.
+
 **Expected Result:**  
-User is successfully logged in and redirected to account dashboard.
+User is successfully logged in and redirected to the account dashboard.
 
 ---
 
 **Problem:**  
-User cannot log in despite providing correct credentials. This blocks access and indicates a possible bug in authentication or user status.
+The user cannot log in despite providing the correct credentials. This blocks access and indicates a possible bug in authentication or user status.
 
 ---
 
-**Severity:** High  
-**Priority:** High  
+**Severity:** Blocker  
+**Priority:** High
+**Status:** New
 **Attachments:**  
 ![alt text](image-1.png)
 
@@ -103,7 +109,7 @@ User cannot log in despite providing correct credentials. This blocks access and
 
 # Bug Report 003
 
-**Title:**  
+**Summary:** 
 Incorrect password returns confusing message – no clear "Invalid password" prompt
 
 **Environment:**  
@@ -126,28 +132,29 @@ User is registered
 ---
 
 **Steps to Reproduce:**  
-1. Navigate to login page  
-2. Enter valid email: `john.doe@example.com`  
+1. Navigate to the login page  
+2. Enter a valid email: `john.doe@example.com`  
 3. Enter incorrect password: `WrongPassword!`  
 4. Click "Sign In"
 
 ---
 
+**Actual Result:**  
+The account sign-in was incorrect, or your account is disabled temporarily. Please wait and try again later.
+
 **Expected Result:**  
 User sees error message: "Invalid login or password."
-
-**Actual Result:**  
-The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.
 
 ---
 
 **Problem:**  
-The error message is too generic or misleading for wrong credentials. It may suggest account lockout, confusing users.
+The error message is too generic or misleading for wrong credentials. It may suggest an account lockout, confusing users.
 
 ---
 
-**Severity:** Medium  
-**Priority:** Medium  
+**Severity:** Minor  
+**Priority:** Medium
+**Status:** New
 **Attachments:**  
 ![alt text](image-1.png)
 
@@ -156,8 +163,8 @@ The error message is too generic or misleading for wrong credentials. It may sug
 
 # Bug Report 004
 
-**Title:**  
-Registered user cannot proceed to checkout – login fails during authenticated session
+**Summary:** 
+Registered user cannot proceed to checkout – login fails during an authenticated session
 
 **Environment:**  
 - **Browser:** Chrome 137.0.7151.57  
@@ -179,29 +186,31 @@ User `john.doe@example.com` is already registered and logged in
 ---
 
 **Steps to Reproduce:**  
-1. Log in as registered user  
-2. Add any product to cart  
+1. Log in as a registered user  
+2. Add any product to the cart  
 3. Proceed to checkout  
 4. Enter shipping and payment information  
 5. Click "Place Order"
 
 ---
 
-**Expected Result:**  
-Order is successfully placed and confirmation message is displayed.
-
 **Actual Result:**
 Message shown:
-The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.
+The account sign-in was incorrect, or your account is disabled temporarily. Please wait and try again later.
+
+**Expected Result:**  
+The order is successfully placed, and a confirmation message is displayed.
 
 ---
 
 **Problem:**  
-The user is unexpectedly logged out or rejected during checkout, making it impossible to place the order despite a valid login session. This blocks the core functionality of the platform for registered users.
+The user is unexpectedly logged out or rejected during checkout, making it impossible to place the order despite a valid login session. This blocks the core functionality for registered users.
 
 ---
 
-**Severity:** High  
-**Priority:** High  
+**Severity:** Blocker  
+**Priority:** High
+**Status:** New
 **Attachments:**  
 ![alt text](image-3.png)
+
