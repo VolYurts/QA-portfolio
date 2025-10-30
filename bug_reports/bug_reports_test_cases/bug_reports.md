@@ -152,7 +152,7 @@ The error message is too generic or misleading for wrong credentials. It may sug
 
 ---
 
-**Severity:** Minor  
+**Severity:** Critical  
 **Priority:** Medium  
 **Status:** New  
 **Attachments:**  
@@ -213,5 +213,6 @@ The user is unexpectedly logged out or rejected during checkout, making it impos
 **Status:** New  
 **Attachments:**  
 ![alt text](image-3.png)
+
 
 
