@@ -60,8 +60,3 @@ Applied the following test design techniques:
 ## 📸 How to View Bug Reports with Images
 
 Screenshots are stored in `/bug_reports/bug_reports_test_cases`.
-
----
-
-
----
