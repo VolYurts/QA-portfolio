@@ -45,7 +45,7 @@ This message may confuse a new user, as it lacks clear options (e.g., link to th
 
 **Severity:** Minor  
 **Priority:** Medium  
-**Status:** New 
+**Status:** New  
 **Attachments:**
 ![alt text](image.png)
 
@@ -99,8 +99,8 @@ The user cannot log in despite providing the correct credentials. This blocks ac
 ---
 
 **Severity:** Blocker  
-**Priority:** High
-**Status:** New
+**Priority:** High  
+**Status:** New  
 **Attachments:**  
 ![alt text](image-1.png)
 
@@ -153,8 +153,8 @@ The error message is too generic or misleading for wrong credentials. It may sug
 ---
 
 **Severity:** Minor  
-**Priority:** Medium
-**Status:** New
+**Priority:** Medium  
+**Status:** New  
 **Attachments:**  
 ![alt text](image-1.png)
 
@@ -208,9 +208,10 @@ The user is unexpectedly logged out or rejected during checkout, making it impos
 
 ---
 
-**Severity:** Blocker  
-**Priority:** High
-**Status:** New
+**Severity:** Blocker   
+**Priority:** High  
+**Status:** New  
 **Attachments:**  
 ![alt text](image-3.png)
+
 
