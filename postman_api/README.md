@@ -1,6 +1,6 @@
-## 📬 API Testing with Postman
+## 📬 API collections via Postman
 
-Manual API testing of [Swagger Petstore](https://petstore.swagger.io/) endpoints.
+[Swagger Petstore](https://petstore.swagger.io/) endpoints.
 
 ### 🔹 Included:
 - CRUD operations for `/pet` endpoint (POST, GET, PUT, DELETE)
