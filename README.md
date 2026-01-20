@@ -1,6 +1,6 @@
 # QA Portfolio
 
-My training project in Quality Assurance focused on developing manual test cases, checklists, basic automation skills and other tools. 
+This project showcases my learning journey in Quality Assurance, including creating basic manual test cases, checklists, introductory automated tests and various other QA tools.
 
 ---
 
